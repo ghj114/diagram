@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-03T09:39:29.684Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="6a2un_CSIVeG6klkXzN8" version="13.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-05T07:05:53.888Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" etag="1pwYwjc3wt2PS4shdEMD" version="13.5.3" type="github">
   <diagram id="pWCuVnenwqvj1yb3YM8K" name="第 1 页">
     <mxGraphModel dx="2066" dy="1082" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -94,7 +94,7 @@
         <mxCell id="zdN6bvFij-YTAh6hxQtL-54" value="listener" style="html=1;" parent="zdN6bvFij-YTAh6hxQtL-52" vertex="1">
           <mxGeometry x="-6" y="100" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="zdN6bvFij-YTAh6hxQtL-55" value="Accept()" style="html=1;" parent="zdN6bvFij-YTAh6hxQtL-52" vertex="1">
+        <mxCell id="zdN6bvFij-YTAh6hxQtL-55" value="AcceptTCP()" style="html=1;" parent="zdN6bvFij-YTAh6hxQtL-52" vertex="1">
           <mxGeometry x="-7.5" y="200" width="130" height="40" as="geometry" />
         </mxCell>
         <mxCell id="zdN6bvFij-YTAh6hxQtL-58" value="tcp.Router.ServeTCP()" style="html=1;" parent="zdN6bvFij-YTAh6hxQtL-52" vertex="1">
@@ -181,7 +181,7 @@
           <mxGeometry x="10" y="230" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="zdN6bvFij-YTAh6hxQtL-86" value="Watcher" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#647687;strokeColor=#314354;" parent="1" vertex="1">
-          <mxGeometry x="820" y="120" width="150" height="1160" as="geometry" />
+          <mxGeometry x="820" y="120" width="157.5" height="1160" as="geometry" />
         </mxCell>
         <mxCell id="zdN6bvFij-YTAh6hxQtL-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="zdN6bvFij-YTAh6hxQtL-86" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -205,13 +205,13 @@
           <mxGeometry x="5" y="550" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="gSZHTJOcY2DM8SWSaC1C-5" value="CreateRouters(" style="html=1;fontColor=#000000;" vertex="1" parent="zdN6bvFij-YTAh6hxQtL-86">
-          <mxGeometry x="25" y="620" width="105" height="50" as="geometry" />
+          <mxGeometry x="30" y="620" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="gSZHTJOcY2DM8SWSaC1C-3" value="routerManager := router.NewManager(" style="html=1;" vertex="1" parent="zdN6bvFij-YTAh6hxQtL-86">
           <mxGeometry x="-40" y="690" width="220" height="50" as="geometry" />
         </mxCell>
         <mxCell id="gSZHTJOcY2DM8SWSaC1C-6" value="handlersNonTLS := routerManager.BuildHandlers(" style="html=1;fontColor=#000000;" vertex="1" parent="zdN6bvFij-YTAh6hxQtL-86">
-          <mxGeometry x="25" y="770" width="110" height="50" as="geometry" />
+          <mxGeometry x="-50" y="770" width="207.5" height="50" as="geometry" />
         </mxCell>
         <mxCell id="gSZHTJOcY2DM8SWSaC1C-7" value="handlersTLS := routerManager.BuildHandlers(" style="html=1;fontColor=#000000;" vertex="1" parent="zdN6bvFij-YTAh6hxQtL-86">
           <mxGeometry x="25" y="840" width="110" height="50" as="geometry" />
@@ -263,6 +263,9 @@
               <mxPoint x="1390" y="365" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="gSZHTJOcY2DM8SWSaC1C-8" value="server/service/service.BuildHTTP()" style="html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1050" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
